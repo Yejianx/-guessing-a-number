@@ -13,10 +13,11 @@ int main()
 	int choose = 0;
 	
 
+
 	do
 	{
 		profile();
-
+	
 		scanf("%d", &choose);
 
 		if (choose==1)
@@ -30,7 +31,8 @@ int main()
 		}
 		else
 		{
-			printf("请重新输入");
+			system("cls");
+			printf("请重新输入:\n");
 		}
 
 	} while (1);
