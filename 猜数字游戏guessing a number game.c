@@ -2,6 +2,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
+#include<time.h>
 
 
 void profile();
@@ -10,10 +11,11 @@ void profile1();
 
 int main()
 {
+
 	int choose = 0;
+
+	srand((unsigned int)time(NULL));
 	
-
-
 	do
 	{
 		profile();
@@ -46,9 +48,9 @@ void game()
 {
 	int i = 0;
 	int j = 0;
-
 	
-		j = rand();
+		j = (rand()%100);//rand%100让其减少到两位数
+
 
 		printf("请猜一个数；");
 
@@ -91,3 +93,4 @@ void profile1()
 	printf("*************************************\n");
 
 }
+
