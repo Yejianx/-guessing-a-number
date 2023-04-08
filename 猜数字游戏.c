@@ -18,6 +18,8 @@ int main()
 	
 	do
 	{
+		system("cls");
+
 		profile();
 	
 		scanf("%d", &choose);
@@ -58,20 +60,20 @@ void game()
 		{
 			scanf("%d", &guess);
 
-			system("cls");
-
 			if (guess == random)
 			{
 				printf("恭喜！猜对了\n");
+				getchar();
+				getchar();
 				break;
 			}
 			else if (guess > random)
 			{
-				printf("大了");
+				printf("猜大了\n");
 			}
 			else
 			{
-				printf("小了");
+				printf("猜小了\n");
 			}
 		}
 
