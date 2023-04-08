@@ -46,26 +46,26 @@ int main()
 
 void game()
 {
-	int i = 0;
-	int j = 0;
+	int guess = 0;
+	int random = 0;
 	
-		j = (rand()%100);//rand%100让其减少到两位数
+	random = (rand()%100);//rand%100让其减少到两位数
 
 
 		printf("请猜一个数；");
 
 		while (1)
 		{
-			scanf("%d", &i);
+			scanf("%d", &guess);
 
 			system("cls");
 
-			if (i == j)
+			if (guess == random)
 			{
 				printf("恭喜！猜对了\n");
 				break;
 			}
-			else if (i > j)
+			else if (guess > random)
 			{
 				printf("大了");
 			}
